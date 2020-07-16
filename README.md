@@ -10,5 +10,17 @@ Run<br />
 <code>python main.py</code>
 </pre>
 ## Gallery
-The main Panel<br />
+1.The main Panel<br />
 ![alt text](gallery/main_panel.png)
+<br />
+2.Hurestic Input<br />
+![alt text](gallery/hi.png)
+<br />
+3.Hurestic Output<br />
+![alt text](gallery/ho.png)
+<br />
+4.Cplex Input<br />
+![alt text](gallery/ci.png)
+<br />
+5.Cplex Output<br />
+![alt text](gallery/co.png)
