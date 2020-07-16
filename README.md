@@ -11,7 +11,7 @@ Run<br />
 </pre>
 ## Gallery
 1.The main Panel<br />
-![alt text](gallery/main_panel.png)
+![alt text](gallery/main_panel.png=100x)
 <br />
 2.Hurestic Input<br />
 ![alt text](gallery/hi.png)
