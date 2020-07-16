@@ -4,4 +4,5 @@ We were supposed to build a simple software for grocery delivery managment which
 So we took two approches for problem. One was to solve CVRP instance exactly using [Integer Linear Programming](https://en.wikipedia.org/wiki/Integer_programming) and other was to use hurestice approch 
 mainly [Construction Hurestic](https://en.wikipedia.org/wiki/Constructive_heuristic). The detailed implementation can be found here<br \>
 ## Gallery
+ numpy, tkinter, matplotlib, cplex
 
