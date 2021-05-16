@@ -1,12 +1,17 @@
 This project was part of [I4 challenge](https://twitter.com/iitdelhi/status/1245606188718239745?s=20)  by IIT Delhi
-### Introduction
+## Introduction
 We were supposed to build a simple software for grocery delivery managment which boils down to Capacitized Vehicle Routing Problem([CVRP](https://en.wikipedia.org/wiki/Vehicle_routing_problem))..
 So we took two approches for problem. One was to solve CVRP instance exactly using [Integer Linear Programming](https://en.wikipedia.org/wiki/Integer_programming) and other was to use hurestice approch 
-mainly [Construction Hurestic](https://en.wikipedia.org/wiki/Constructive_heuristic). The detailed implementation can be found [here](./gallery/report_i4_4.pdf)<br />
-### Requirments
+mainly [Construction Hurestic](https://en.wikipedia.org/wiki/Constructive_heuristic). The detailed implementation can be found [here](./gallery/report_i4_4.pdf)
+#### Construction Hurestics
+Here the program start with instance of solution where delivery agents are sent to extreme points. The recursively add city to agent's path if it valid solution and increase in cost is minimum.  When all cities are assigned to path it performs Large Neigbhourhood Search (LNS) to move from local minima. This involve destroying some small part of solution by unassigning some cities and then again use same recursive logic to update solution.
+#### CPLEX
+Some trivial constraints are defiend in requirment of CPLEX solver. Then problem is handed to solver.
+
+## Requirments
 1. Python with numpy, tkinter, matplotlib, cplex
 2. C++ compiler
-### Getting Started
+## Getting Started
 Run<br />
 <pre>
 <code>python main.py</code>
@@ -21,16 +26,16 @@ It will open main panel image 1 from [Galary](#gallery). Follow the steps:
 7. Choose input type. If you choose default all information you filled above will be overwritten by default values.
 ## Gallery
 1.The main Panel<br />
-![](./gallery/main_panel.png)
+<img alt="ALT test" src="./gallery/main_panel.png" width=600>
 <br />
 2.Hurestic Input<br />
-![](./gallery/hi.png)
+<img alt="ALT test" src="./gallery/hi.png" width=300>
 <br />
 3.Hurestic Output<br />
-![](./gallery/ho.png)
+<img alt="ALT test" src="./gallery/ho.png" width=300>
 <br />
 4.Cplex Input<br />
-![](./gallery/ci.png)
+<img alt="ALT test" src="./gallery/ci.png" width=300>
 <br />
 5.Cplex Output<br />
-![](./gallery/co.png)
+<img alt="ALT test" src="./gallery/co.png" width=300>
